@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Design of Adder and Fast Adder</title>
+</head>
+<body>
+
+    <h2>Design of Adder and Fast Adder</h2>
+
+    <p>
+        Adders are digital circuits used to perform addition of binary numbers.
+        They are an essential part of the Arithmetic Logic Unit (ALU).
+    </p>
+
+    <h3>1. Half Adder</h3>
+    <p>
+        Half Adder adds two binary bits and produces a sum and carry.
+    </p>
+    <ul>
+        <li>Inputs: A, B</li>
+        <li>Outputs: Sum (S), Carry (C)</li>
+        <li>Sum = A XOR B</li>
+        <li>Carry = A AND B</li>
+    </ul>
+
+    <h3>2. Full Adder</h3>
+    <p>
+        Full Adder adds three bits (A, B and Carry-in).
+    </p>
+    <ul>
+        <li>Inputs: A, B, Carry-in</li>
+        <li>Outputs: Sum, Carry-out</li>
+        <li>Sum = A XOR B XOR Cin</li>
+        <li>Carry-out = (A AND B) + (Cin AND (A XOR B))</li>
+    </ul>
+
+    <h3>3. Ripple Carry Adder</h3>
+    <p>
+        Multiple full adders are connected in series to form a ripple carry adder.
+        The carry output of one adder becomes the carry input of the next.
+    </p>
+
+    <h3>4. Fast Adder</h3>
+    <p>
+        Fast adders improve speed by reducing the time required for carry propagation.
+        Carry Look Ahead Adder is a popular fast adder.
+    </p>
+
+    <h3>Conclusion</h3>
+    <p>
+        Adder design is important for fast arithmetic operations in CPUs.
+        Fast adders help increase overall performance.
+    </p>
+
+    <br>
+    <a href="../../units_cmp/unit1.html">⬅ Back to Unit I</a>
+
+</body>
+</html>

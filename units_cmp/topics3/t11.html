@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Based Addressing Mode</title>
+</head>
+<body>
+
+<h2>Based Addressing Mode</h2>
+
+<p>
+In Based Addressing Mode, the effective address of the operand
+is obtained by adding a base register to a displacement value.
+It is commonly used for accessing data structures.
+</p>
+
+<h3>Format</h3>
+<p>
+Instruction  Register, [Base Register + Displacement]
+</p>
+
+<h3>Example</h3>
+<ul>
+    <li>MOV AX, [BX + 2000H]</li>
+    <li>MOV AL, [BP + 10H]</li>
+</ul>
+
+<p>
+In the above examples, BX or BP acts as the base register.
+The displacement is added to calculate the effective address.
+</p>
+
+<h3>Features</h3>
+<ul>
+    <li>Uses base registers (BX or BP)</li>
+    <li>Effective address calculated during execution</li>
+    <li>Useful for structured data access</li>
+</ul>
+
+<h3>Advantages</h3>
+<ul>
+    <li>Flexible memory addressing</li>
+    <li>Efficient for handling data structures</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Based Addressing Mode provides flexibility by using base registers
+to calculate memory addresses dynamically.
+</p>
+
+<br>
+<a href="../unit3.html">⬅ Back to Unit III</a>
+
+</body>
+</html>

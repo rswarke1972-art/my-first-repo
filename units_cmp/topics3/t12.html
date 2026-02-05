@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Based Indexed Addressing Mode</title>
+</head>
+<body>
+
+<h2>Based Indexed Addressing Mode</h2>
+
+<p>
+In Based Indexed Addressing Mode, the effective address of the operand
+is calculated by adding a base register and an index register.
+It may also include a displacement.
+</p>
+
+<h3>Format</h3>
+<p>
+Instruction  Register, [Base Register + Index Register + Displacement]
+</p>
+
+<h3>Example</h3>
+<ul>
+    <li>MOV AX, [BX + SI]</li>
+    <li>MOV AL, [BP + DI + 10H]</li>
+</ul>
+
+<p>
+In the above examples, BX or BP acts as the base register,
+SI or DI acts as the index register, and displacement is optional.
+</p>
+
+<h3>Features</h3>
+<ul>
+    <li>Uses both base and index registers</li>
+    <li>Can include displacement</li>
+    <li>Very flexible addressing mode</li>
+</ul>
+
+<h3>Advantages</h3>
+<ul>
+    <li>Efficient for complex data structures</li>
+    <li>Useful for multi-dimensional arrays</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Based Indexed Addressing Mode provides maximum flexibility in
+address calculation by combining base register, index register,
+and displacement.
+</p>
+
+<br>
+<a href="../unit3.html">⬅ Back to Unit III</a>
+
+</body>
+</html>

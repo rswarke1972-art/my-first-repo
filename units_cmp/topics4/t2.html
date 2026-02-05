@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logical to Physical Address Translation</title>
+</head>
+<body>
+
+<h2>Logical to Physical Address Translation</h2>
+
+<p>
+In 8086 microprocessor, the logical address is converted into
+a physical address to access memory. The logical address consists
+of a segment address and an offset address.
+</p>
+
+<h3>Logical Address</h3>
+<ul>
+    <li>Segment Address : Offset</li>
+    <li>Example: 2000H : 1000H</li>
+</ul>
+
+<h3>Physical Address Calculation</h3>
+<p>
+Physical Address = (Segment Address × 10H) + Offset
+</p>
+
+<h3>Example Calculation</h3>
+<ul>
+    <li>Segment = 2000H</li>
+    <li>Offset = 1000H</li>
+    <li>Physical Address = 20000H + 1000H = 21000H</li>
+</ul>
+
+<h3>Explanation</h3>
+<ul>
+    <li>Segment address is shifted left by 4 bits (multiplied by 10H)</li>
+    <li>Offset is added to get final 20 bit physical address</li>
+    <li>Allows access up to 1 MB memory</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Logical to Physical Address Translation enables 8086 to access
+1 MB memory using 16 bit segment and offset registers.
+</p>
+
+<br>
+<a href="../unit4.html">⬅ Back to Unit IV</a>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Serializability: Conflict and View</title>
+</head>
+<body>
+
+<h2>Serializability: Conflict and View</h2>
+
+<p>
+Serializability ensures that a non-serial schedule
+produces the same result as a serial schedule.
+It guarantees consistency during concurrent execution.
+</p>
+
+<h3>1. Conflict Serializability</h3>
+<ul>
+    <li>Based on conflicting operations</li>
+    <li>Two operations conflict if:
+        <ul>
+            <li>They belong to different transactions</li>
+            <li>They access same data item</li>
+            <li>At least one operation is write</li>
+        </ul>
+    </li>
+    <li>Can be tested using precedence graph</li>
+</ul>
+
+<h3>2. View Serializability</h3>
+<ul>
+    <li>Based on view equivalence</li>
+    <li>Schedules are equivalent if:
+        <ul>
+            <li>Same initial reads</li>
+            <li>Same final writes</li>
+        </ul>
+    </li>
+    <li>More general than conflict serializability</li>
+</ul>
+
+<h3>Importance</h3>
+<ul>
+    <li>Ensures correctness in concurrent execution</li>
+    <li>Maintains data consistency</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Serializability guarantees that concurrent
+transactions behave like serial execution.
+</p>
+
+<br>
+<a href="../unit4.html">⬅ Back to Unit IV</a>
+
+</body>
+</html>

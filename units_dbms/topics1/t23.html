@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Converting E-R & EER Diagram into Tables</title>
+</head>
+<body>
+
+<h2>Converting E-R & EER Diagram into Tables</h2>
+
+<p>
+Converting an ER or EER diagram into tables is the process
+of transforming conceptual design into relational schema.
+Each entity and relationship is converted into tables.
+</p>
+
+<h3>Steps to Convert ER Diagram into Tables</h3>
+
+<h4>1. Convert Entities into Tables</h4>
+<ul>
+    <li>Create a table for each entity</li>
+    <li>Attributes become columns</li>
+    <li>Primary key is defined</li>
+</ul>
+
+<h4>2. Convert Relationships</h4>
+<ul>
+    <li>1:1 → Add foreign key to one table</li>
+    <li>1:N → Add foreign key to N-side table</li>
+    <li>M:N → Create separate relation table</li>
+</ul>
+
+<h4>3. Convert Weak Entities</h4>
+<ul>
+    <li>Create table including partial key</li>
+    <li>Add foreign key from strong entity</li>
+</ul>
+
+<h4>4. Convert Specialization and Generalization</h4>
+<ul>
+    <li>Create separate tables for parent and child entities</li>
+    <li>Use primary key of parent as foreign key in child</li>
+</ul>
+
+<h3>Importance</h3>
+<ul>
+    <li>Transforms conceptual model into implementable form</li>
+    <li>Ensures proper relational structure</li>
+    <li>Maintains data integrity</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Converting ER and EER diagrams into tables helps
+implement database design in relational DBMS.
+</p>
+
+<br>
+<a href="../unit1.html">⬅ Back to Unit I</a>
+
+</body>
+</html>

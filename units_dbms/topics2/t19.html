@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Join Queries</title>
+</head>
+<body>
+
+<h2>Join Queries</h2>
+
+<p>
+Join queries are used to retrieve data from two or more
+tables based on a related column between them.
+</p>
+
+<h3>Types of Joins</h3>
+
+<h4>1. INNER JOIN</h4>
+<ul>
+    <li>Returns matching records from both tables</li>
+</ul>
+
+<h4>Example</h4>
+<p>
+SELECT Student.Name, Course.Course_Name  
+FROM Student  
+INNER JOIN Course  
+ON Student.Course_ID = Course.Course_ID;
+</p>
+
+<h4>2. LEFT JOIN</h4>
+<ul>
+    <li>Returns all records from left table and matching from right table</li>
+</ul>
+
+<h4>3. RIGHT JOIN</h4>
+<ul>
+    <li>Returns all records from right table and matching from left table</li>
+</ul>
+
+<h4>4. FULL JOIN</h4>
+<ul>
+    <li>Returns all records when there is a match in either table</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Join queries help combine data from multiple tables
+based on relationships between them.
+</p>
+
+<br>
+<a href="../unit2.html">⬅ Back to Unit II</a>
+
+</body>
+</html>

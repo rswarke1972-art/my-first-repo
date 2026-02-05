@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Atomic Domains and First Normal Form</title>
+</head>
+<body>
+
+<h2>Atomic Domains and First Normal Form (1NF)</h2>
+
+<p>
+Atomic Domain means that each attribute in a table
+contains indivisible (atomic) values. This concept
+leads to First Normal Form (1NF).
+</p>
+
+<h3>Atomic Domain</h3>
+<ul>
+    <li>Each field contains single value</li>
+    <li>No repeating groups</li>
+</ul>
+
+<h3>First Normal Form (1NF)</h3>
+<ul>
+    <li>Table must have atomic values</li>
+    <li>No multi-valued attributes</li>
+    <li>Each row must be unique</li>
+</ul>
+
+<h3>Example (Not in 1NF)</h3>
+<p>
+Student (Roll_No, Name, Phone_Numbers)
+</p>
+
+<p>
+If Phone_Numbers contains multiple values → Not 1NF
+</p>
+
+<h3>Converted to 1NF</h3>
+<p>
+Student (Roll_No, Name, Phone_Number)
+</p>
+
+<h3>Conclusion</h3>
+<p>
+1NF ensures atomic values and removes
+repeating groups from a relation.
+</p>
+
+<br>
+<a href="../unit3.html">⬅ Back to Unit III</a>
+
+</body>
+</html>

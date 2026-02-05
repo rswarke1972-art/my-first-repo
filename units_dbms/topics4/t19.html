@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Concurrency Control: Need, Locking Methods</title>
+</head>
+<body>
+
+<h2>Concurrency Control: Need, Locking Methods</h2>
+
+<p>
+Concurrency Control is used to manage simultaneous
+execution of transactions without causing data inconsistency.
+It ensures isolation and serializability.
+</p>
+
+<h3>Need for Concurrency Control</h3>
+<ul>
+    <li>Prevent lost updates</li>
+    <li>Avoid dirty reads</li>
+    <li>Maintain data consistency</li>
+    <li>Ensure serializability</li>
+</ul>
+
+<h3>Locking Methods</h3>
+
+<h4>1. Shared Lock (S)</h4>
+<ul>
+    <li>Allows multiple transactions to read data</li>
+    <li>No transaction can write</li>
+</ul>
+
+<h4>2. Exclusive Lock (X)</h4>
+<ul>
+    <li>Allows transaction to read and write</li>
+    <li>No other transaction can access data</li>
+</ul>
+
+<h4>3. Two-Phase Locking (2PL)</h4>
+<ul>
+    <li>Growing phase: Acquire locks</li>
+    <li>Shrinking phase: Release locks</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Concurrency control ensures safe and
+consistent execution of multiple transactions.
+</p>
+
+<br>
+<a href="../unit4.html">⬅ Back to Unit IV</a>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signed Operand Multiplication</title>
+</head>
+<body>
+
+    <h2>Signed Operand Multiplication</h2>
+
+    <p>
+        Signed multiplication is used when one or both operands are negative.
+        Computers use <b>two’s complement</b> representation for signed numbers.
+    </p>
+
+    <h3>Steps for Signed Multiplication</h3>
+    <ul>
+        <li>Convert both operands to two’s complement</li>
+        <li>Multiply as positive numbers</li>
+        <li>If result is negative, convert back using two’s complement</li>
+    </ul>
+
+    <h3>Example</h3>
+    <p>Multiply +5 and -3</p>
+
+    <ul>
+        <li>+5 = 0101</li>
+        <li>-3 = 1101 (two’s complement)</li>
+        <li>Result = 0101 × 1101 = 1011 (−15 in two’s complement)</li>
+    </ul>
+
+    <h3>Important Points</h3>
+    <ul>
+        <li>Sign bit is the MSB (most significant bit)</li>
+        <li>Negative result is represented in two’s complement</li>
+        <li>Overflow must be checked</li>
+    </ul>
+
+    <br>
+    <a href="../../units_cmp/unit1.html">⬅ Back to Unit I</a>
+
+</body>
+</html>

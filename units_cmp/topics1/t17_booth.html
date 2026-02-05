@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booth's Algorithm</title>
+</head>
+<body>
+
+    <h2>Booth’s Algorithm</h2>
+
+    <p>
+        Booth’s Algorithm is a fast multiplication technique used for
+        multiplying signed binary numbers.
+        It reduces the number of required addition and subtraction steps.
+    </p>
+
+    <h3>How Booth’s Algorithm Works</h3>
+    <ul>
+        <li>It scans the multiplier from right to left.</li>
+        <li>It uses a special register called <b>Q-1</b> which stores the previous bit.</li>
+        <li>Based on the current bit and Q-1, it decides whether to add,
+            subtract, or do nothing.</li>
+    </ul>
+
+    <h3>Rules</h3>
+    <ul>
+        <li>If the last two bits are <b>01</b> → Add the multiplicand.</li>
+        <li>If the last two bits are <b>10</b> → Subtract the multiplicand.</li>
+        <li>If the last two bits are <b>00 or 11</b> → Do nothing.</li>
+    </ul>
+
+    <h3>Example</h3>
+    <p>
+        Suppose multiplier = 3 (0011) and multiplicand = -4 (1100).
+        Booth’s algorithm will efficiently perform multiplication using
+        shifts and add/subtract operations.
+    </p>
+
+    <h3>Advantages</h3>
+    <ul>
+        <li>Works for signed numbers</li>
+        <li>Reduces number of arithmetic operations</li>
+        <li>Improves multiplication speed</li>
+    </ul>
+
+    <h3>Conclusion</h3>
+    <p>
+        Booth’s Algorithm is widely used in computer arithmetic units
+        for efficient signed multiplication.
+    </p>
+
+    <br>
+    <a href="../../units_cmp/unit1.html">⬅ Back to Unit I</a>
+
+</body>
+</html>

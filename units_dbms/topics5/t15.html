@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Indexing and Aggregation</title>
+</head>
+<body>
+
+<h2>Indexing and Aggregation</h2>
+
+<p>
+Indexing improves query performance in MongoDB,
+while Aggregation is used to process and analyze data.
+</p>
+
+<h3>Indexing</h3>
+<ul>
+    <li>Speeds up data retrieval</li>
+    <li>Created on specific fields</li>
+</ul>
+
+<h4>Example</h4>
+<p>
+db.student.createIndex({name: 1})
+</p>
+
+<h3>Aggregation</h3>
+<ul>
+    <li>Processes data records</li>
+    <li>Used for grouping and calculations</li>
+</ul>
+
+<h4>Example</h4>
+<p>
+db.student.aggregate([
+   {$group: {_id: "$age", count: {$sum: 1}}}
+])
+</p>
+
+<h3>Importance</h3>
+<ul>
+    <li>Improves performance</li>
+    <li>Helps in data analysis</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Indexing enhances performance,
+while aggregation supports data processing
+in MongoDB.
+</p>
+
+<br>
+<a href="../unit5.html">⬅ Back to Unit V</a>
+
+</body>
+</html>

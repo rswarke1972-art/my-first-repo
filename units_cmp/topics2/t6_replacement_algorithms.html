@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Replacement Algorithms</title>
+</head>
+<body>
+
+    <h2>Replacement Algorithms</h2>
+
+    <p>
+        When the cache is full and a new block needs to be loaded,
+        the system must decide which existing block should be removed.
+        The rule used for this decision is called a replacement algorithm.
+    </p>
+
+    <h3>Common Replacement Algorithms</h3>
+
+    <h4>1. Least Recently Used (LRU)</h4>
+    <p>
+        LRU removes the block that has not been used for the longest time.
+        It assumes that recently used blocks will be used again soon.
+    </p>
+
+    <h4>2. First In First Out (FIFO)</h4>
+    <p>
+        FIFO removes the oldest block in cache (first stored).
+        It is simple but may remove frequently used data.
+    </p>
+
+    <h4>3. Random Replacement</h4>
+    <p>
+        Randomly selects a block to remove.
+        Simple but not always efficient.
+    </p>
+
+    <h4>4. Least Frequently Used (LFU)</h4>
+    <p>
+        Removes the block that is used least frequently.
+        It counts how many times each block is used.
+    </p>
+
+    <h3>Conclusion</h3>
+    <p>
+        Replacement algorithms help improve cache performance.
+        LRU is the most commonly used algorithm in modern systems.
+    </p>
+
+    <br>
+    <a href="../../units_cmp/unit2.html">⬅ Back to Unit II</a>
+
+</body>
+</html>

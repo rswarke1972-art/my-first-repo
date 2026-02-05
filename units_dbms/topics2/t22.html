@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Set Membership</title>
+</head>
+<body>
+
+<h2>Set Membership</h2>
+
+<p>
+Set membership in SQL is used to test whether a value
+belongs to a specified set of values. It is commonly
+used with the IN and NOT IN operators.
+</p>
+
+<h3>IN Operator</h3>
+<ul>
+    <li>Checks if a value matches any value in a list</li>
+</ul>
+
+<h4>Example</h4>
+<p>
+SELECT * FROM Student  
+WHERE Age IN (18, 19, 20);
+</p>
+
+<h3>NOT IN Operator</h3>
+<ul>
+    <li>Checks if a value does not match any value in a list</li>
+</ul>
+
+<h4>Example</h4>
+<p>
+SELECT * FROM Student  
+WHERE Age NOT IN (18, 19);
+</p>
+
+<h3>Importance</h3>
+<ul>
+    <li>Simplifies multiple OR conditions</li>
+    <li>Used in nested queries</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Set membership operators help filter data
+based on a list of values efficiently.
+</p>
+
+<br>
+<a href="../unit2.html">⬅ Back to Unit II</a>
+
+</body>
+</html>

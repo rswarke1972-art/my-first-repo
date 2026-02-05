@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Serial Schedule</title>
+</head>
+<body>
+
+<h2>Serial Schedule</h2>
+
+<p>
+A Serial Schedule is a schedule in which
+transactions are executed one after another
+without overlapping.
+</p>
+
+<h3>Characteristics</h3>
+<ul>
+    <li>No interleaving of operations</li>
+    <li>One transaction completes before another begins</li>
+    <li>Maintains database consistency</li>
+</ul>
+
+<h3>Example</h3>
+<p>
+T1: Read(A) → Write(A) → Commit  
+T2: Read(B) → Write(B) → Commit
+</p>
+
+<p>
+Here, T2 starts only after T1 finishes.
+</p>
+
+<h3>Advantages</h3>
+<ul>
+    <li>Simple to implement</li>
+    <li>No concurrency problems</li>
+</ul>
+
+<h3>Disadvantages</h3>
+<ul>
+    <li>Low performance</li>
+    <li>No parallel execution</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Serial schedules ensure correctness
+but reduce system efficiency.
+</p>
+
+<br>
+<a href="../unit4.html">⬅ Back to Unit IV</a>
+
+</body>
+</html>

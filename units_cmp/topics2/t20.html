@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RAID Level 5</title>
+</head>
+<body>
+
+<h2>RAID Level 5</h2>
+
+<p>
+RAID Level 5 uses block-level data striping with distributed parity.
+Unlike RAID 4, parity information is distributed across all disks
+instead of being stored on a single dedicated disk.
+</p>
+
+<h3>Working of RAID 5</h3>
+<ul>
+    <li>Data is divided into blocks</li>
+    <li>Blocks are distributed across multiple disks</li>
+    <li>Parity is also distributed among all disks</li>
+    <li>If one disk fails, data can be reconstructed using parity</li>
+</ul>
+
+<h3>Features</h3>
+<ul>
+    <li>No single parity disk</li>
+    <li>Improved write performance compared to RAID 4</li>
+    <li>Requires minimum three disks</li>
+</ul>
+
+<h3>Advantages</h3>
+<ul>
+    <li>Good read performance</li>
+    <li>Better write performance than RAID 4</li>
+    <li>Efficient use of storage</li>
+    <li>Provides fault tolerance</li>
+</ul>
+
+<h3>Disadvantages</h3>
+<ul>
+    <li>Write operations are slower than RAID 0</li>
+    <li>Can tolerate only one disk failure</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+RAID Level 5 is widely used because it provides a good balance
+between performance, storage efficiency, and reliability.
+</p>
+
+<br>
+<a href="../unit2.html">⬅ Back to Unit II</a>
+
+</body>
+</html>

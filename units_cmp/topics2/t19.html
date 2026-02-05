@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RAID Level 4</title>
+</head>
+<body>
+
+<h2>RAID Level 4</h2>
+
+<p>
+RAID Level 4 uses block-level data striping with a dedicated parity disk.
+Data is divided into blocks and distributed across multiple disks,
+while one separate disk stores parity information.
+</p>
+
+<h3>Working of RAID 4</h3>
+<ul>
+    <li>Data is split into blocks</li>
+    <li>Blocks are stored across multiple disks</li>
+    <li>One dedicated disk stores parity</li>
+    <li>If one disk fails, data can be reconstructed using parity</li>
+</ul>
+
+<h3>Features</h3>
+<ul>
+    <li>Block-level striping</li>
+    <li>Dedicated parity disk</li>
+    <li>Supports independent read operations</li>
+</ul>
+
+<h3>Advantages</h3>
+<ul>
+    <li>Good read performance</li>
+    <li>Provides fault tolerance</li>
+    <li>Efficient for large files</li>
+</ul>
+
+<h3>Disadvantages</h3>
+<ul>
+    <li>Parity disk may become bottleneck during write operations</li>
+    <li>Slower write performance</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+RAID Level 4 improves read performance and provides reliability using
+a dedicated parity disk. However, the parity disk can limit write
+performance in high workload systems.
+</p>
+
+<br>
+<a href="../unit2.html">⬅ Back to Unit II</a>
+
+</body>
+</html>

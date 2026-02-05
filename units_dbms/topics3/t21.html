@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Boyce-Codd Normal Form (BCNF)</title>
+</head>
+<body>
+
+<h2>Boyce-Codd Normal Form (BCNF)</h2>
+
+<p>
+BCNF (Boyce-Codd Normal Form) is a higher level
+of normalization than 3NF. It removes certain
+anomalies that 3NF does not handle.
+</p>
+
+<h3>Definition</h3>
+<ul>
+    <li>A relation is in BCNF if for every
+        functional dependency A → B,
+        A is a super key.</li>
+</ul>
+
+<h3>Difference Between 3NF and BCNF</h3>
+<ul>
+    <li>3NF allows some exceptions</li>
+    <li>BCNF is stricter than 3NF</li>
+</ul>
+
+<h3>Example</h3>
+<p>
+Course (Teacher, Subject)
+</p>
+
+<ul>
+    <li>If Teacher → Subject and Subject → Teacher</li>
+    <li>Both are candidate keys</li>
+</ul>
+
+<h3>Importance</h3>
+<ul>
+    <li>Eliminates redundancy</li>
+    <li>Prevents anomalies</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+BCNF ensures that every determinant
+in a functional dependency is a super key.
+</p>
+
+<br>
+<a href="../unit3.html">⬅ Back to Unit III</a>
+
+</body>
+</html>

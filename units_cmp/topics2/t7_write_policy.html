@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Write Policy</title>
+</head>
+<body>
+
+    <h2>Write Policy</h2>
+
+    <p>
+        Write policy defines how data is written into cache and main memory
+        when the CPU performs a write operation.
+    </p>
+
+    <h3>Main Write Policies</h3>
+
+    <h4>1. Write Through</h4>
+    <p>
+        In write-through, data is written to both cache and main memory
+        at the same time.
+    </p>
+    <ul>
+        <li>Simple and safe</li>
+        <li>Slower due to frequent memory writes</li>
+    </ul>
+
+    <h4>2. Write Back (Write-Behind)</h4>
+    <p>
+        In write-back, data is written only to cache.
+        Main memory is updated later when the cache block is replaced.
+    </p>
+    <ul>
+        <li>Faster because it reduces memory writes</li>
+        <li>Needs additional hardware for tracking modified blocks</li>
+    </ul>
+
+    <h3>Conclusion</h3>
+    <p>
+        Write-back is faster but complex, while write-through is simple and reliable.
+        Modern systems use a combination of both depending on requirements.
+    </p>
+
+    <br>
+    <a href="../../units_cmp/unit2.html">⬅ Back to Unit II</a>
+
+</body>
+</html>

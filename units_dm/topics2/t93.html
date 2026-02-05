@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Warshall's Algorithm</title>
+</head>
+<body>
+
+<h2>Warshall's Algorithm</h2>
+
+<p>
+Warshall's Algorithm is used to find
+the transitive closure of a relation.
+It works using matrix representation.
+</p>
+
+<h3>Steps</h3>
+<ul>
+    <li>Start with adjacency matrix of relation</li>
+    <li>Update matrix using intermediate vertices</li>
+    <li>Continue until all vertices are considered</li>
+</ul>
+
+<h3>Formula</h3>
+<p>
+M[i][j] = M[i][j] OR (M[i][k] AND M[k][j])
+</p>
+
+<h3>Applications</h3>
+<ul>
+    <li>Finding reachability in graphs</li>
+    <li>Database query processing</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Warshall's Algorithm efficiently computes
+the transitive closure of a relation.
+</p>
+
+<br>
+<a href="../unit2.html">⬅ Back to Unit II</a>
+
+</body>
+</html>

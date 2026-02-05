@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MongoDB: CRUD Operations</title>
+</head>
+<body>
+
+<h2>MongoDB: CRUD Operations</h2>
+
+<p>
+CRUD stands for Create, Read, Update, and Delete.
+These are the basic operations performed in MongoDB.
+</p>
+
+<h3>1. Create</h3>
+<ul>
+    <li>Insert new document into collection</li>
+</ul>
+
+<h4>Example</h4>
+<p>
+db.student.insertOne({name: "Manoj", age: 20})
+</p>
+
+<h3>2. Read</h3>
+<ul>
+    <li>Retrieve documents from collection</li>
+</ul>
+
+<h4>Example</h4>
+<p>
+db.student.find()
+</p>
+
+<h3>3. Update</h3>
+<ul>
+    <li>Modify existing document</li>
+</ul>
+
+<h4>Example</h4>
+<p>
+db.student.updateOne({name: "Manoj"}, {$set: {age: 21}})
+</p>
+
+<h3>4. Delete</h3>
+<ul>
+    <li>Remove document from collection</li>
+</ul>
+
+<h4>Example</h4>
+<p>
+db.student.deleteOne({name: "Manoj"})
+</p>
+
+<h3>Conclusion</h3>
+<p>
+CRUD operations are fundamental
+for managing data in MongoDB.
+</p>
+
+<br>
+<a href="../unit5.html">⬅ Back to Unit V</a>
+
+</body>
+</html>

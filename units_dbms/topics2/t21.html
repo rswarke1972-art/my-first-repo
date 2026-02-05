@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Set Operation</title>
+</head>
+<body>
+
+<h2>Set Operation</h2>
+
+<p>
+Set operations in SQL are used to combine the results
+of two or more SELECT queries. The queries must have
+the same number of columns and compatible data types.
+</p>
+
+<h3>Types of Set Operations</h3>
+
+<h4>1. UNION</h4>
+<ul>
+    <li>Combines results and removes duplicates</li>
+</ul>
+
+<h4>2. UNION ALL</h4>
+<ul>
+    <li>Combines results including duplicates</li>
+</ul>
+
+<h4>3. INTERSECT</h4>
+<ul>
+    <li>Returns common rows from both queries</li>
+</ul>
+
+<h4>4. MINUS</h4>
+<ul>
+    <li>Returns rows from first query not in second query</li>
+</ul>
+
+<h3>Example</h3>
+<p>
+SELECT Name FROM Student  
+UNION  
+SELECT Name FROM Alumni;
+</p>
+
+<h3>Conclusion</h3>
+<p>
+Set operations allow combining multiple query results
+efficiently in SQL.
+</p>
+
+<br>
+<a href="../unit2.html">⬅ Back to Unit II</a>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stored Procedure and Function</title>
+</head>
+<body>
+
+<h2>Stored Procedure and Function</h2>
+
+<p>
+Stored Procedures and Functions are PL/SQL blocks
+that are stored in the database and can be executed
+whenever required.
+</p>
+
+<h3>Stored Procedure</h3>
+<ul>
+    <li>Performs a specific task</li>
+    <li>May or may not return a value</li>
+</ul>
+
+<h4>Example</h4>
+<p>
+CREATE OR REPLACE PROCEDURE show_msg IS  
+BEGIN  
+   DBMS_OUTPUT.PUT_LINE('Hello Manoj');  
+END;
+</p>
+
+<h3>Function</h3>
+<ul>
+    <li>Always returns a value</li>
+</ul>
+
+<h4>Example</h4>
+<p>
+CREATE OR REPLACE FUNCTION get_age  
+RETURN NUMBER IS  
+BEGIN  
+   RETURN 20;  
+END;
+</p>
+
+<h3>Advantages</h3>
+<ul>
+    <li>Code reusability</li>
+    <li>Improved security</li>
+    <li>Better performance</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Stored Procedures and Functions help
+organize reusable program logic in PL/SQL.
+</p>
+
+<br>
+<a href="../unit2.html">⬅ Back to Unit II</a>
+
+</body>
+</html>

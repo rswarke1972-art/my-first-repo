@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RAID Level 3</title>
+</head>
+<body>
+
+<h2>RAID Level 3</h2>
+
+<p>
+RAID Level 3 uses byte-level data striping with a dedicated parity disk.
+Data is divided into bytes and distributed across multiple disks, while
+one separate disk stores parity information.
+</p>
+
+<h3>Working of RAID 3</h3>
+<ul>
+    <li>Data is split at byte level</li>
+    <li>Data bytes are stored on multiple disks</li>
+    <li>One dedicated disk stores parity information</li>
+    <li>If one disk fails, data can be reconstructed using parity</li>
+</ul>
+
+<h3>Features</h3>
+<ul>
+    <li>High data transfer rate</li>
+    <li>Provides fault tolerance</li>
+    <li>Requires synchronized disks</li>
+</ul>
+
+<h3>Advantages</h3>
+<ul>
+    <li>Good performance for large sequential data</li>
+    <li>Can recover data if one disk fails</li>
+</ul>
+
+<h3>Disadvantages</h3>
+<ul>
+    <li>Dedicated parity disk may become bottleneck</li>
+    <li>Not efficient for small data requests</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+RAID Level 3 provides reliability using a dedicated parity disk.
+It is suitable for applications requiring high data transfer rates,
+but is less common in modern systems.
+</p>
+
+<br>
+<a href="../unit2.html">⬅ Back to Unit II</a>
+
+</body>
+</html>

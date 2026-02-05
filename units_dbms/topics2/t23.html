@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested Queries</title>
+</head>
+<body>
+
+<h2>Nested Queries</h2>
+
+<p>
+A Nested Query (Subquery) is a query inside another SQL query.
+It is used to retrieve data that will be used by the main query.
+</p>
+
+<h3>Types of Nested Queries</h3>
+
+<h4>1. Single Row Subquery</h4>
+<ul>
+    <li>Returns only one row</li>
+</ul>
+
+<h4>Example</h4>
+<p>
+SELECT * FROM Student  
+WHERE Age = (SELECT MAX(Age) FROM Student);
+</p>
+
+<h4>2. Multiple Row Subquery</h4>
+<ul>
+    <li>Returns multiple rows</li>
+    <li>Used with IN, ANY, ALL operators</li>
+</ul>
+
+<h4>Example</h4>
+<p>
+SELECT * FROM Student  
+WHERE Course_ID IN (SELECT Course_ID FROM Course WHERE Credits > 3);
+</p>
+
+<h3>Importance</h3>
+<ul>
+    <li>Improves query flexibility</li>
+    <li>Used for complex filtering</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Nested queries allow one query to use
+the result of another query.
+</p>
+
+<br>
+<a href="../unit2.html">⬅ Back to Unit II</a>
+
+</body>
+</html>

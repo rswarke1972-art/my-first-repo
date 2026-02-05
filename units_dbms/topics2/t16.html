@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View</title>
+</head>
+<body>
+
+<h2>View</h2>
+
+<p>
+A View in SQL is a virtual table based on the result
+of a SELECT query. It does not store data physically,
+but displays data from one or more tables.
+</p>
+
+<h3>Creating a View</h3>
+<p>
+CREATE VIEW view_name AS
+SELECT column_name FROM table_name;
+</p>
+
+<h3>Example</h3>
+<ul>
+    <li>CREATE VIEW Student_View AS SELECT Name, Age FROM Student;</li>
+</ul>
+
+<h3>Advantages</h3>
+<ul>
+    <li>Improves security</li>
+    <li>Simplifies complex queries</li>
+    <li>Hides sensitive data</li>
+</ul>
+
+<h3>Dropping a View</h3>
+<ul>
+    <li>DROP VIEW view_name;</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Views provide a simplified and secure way
+to access data from database tables.
+</p>
+
+<br>
+<a href="../unit2.html">⬅ Back to Unit II</a>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cascaded Aborts</title>
+</head>
+<body>
+
+<h2>Cascaded Aborts</h2>
+
+<p>
+Cascaded Abort occurs when one transaction fails
+and causes other dependent transactions to fail.
+This happens when transactions read uncommitted data.
+</p>
+
+<h3>Cause of Cascaded Abort</h3>
+<ul>
+    <li>Transaction T1 writes data</li>
+    <li>Transaction T2 reads that uncommitted data</li>
+    <li>If T1 aborts, T2 must also abort</li>
+</ul>
+
+<h3>Example</h3>
+<p>
+T1: Write(A)  
+T2: Read(A)  
+If T1 aborts → T2 must abort
+</p>
+
+<h3>Problem</h3>
+<ul>
+    <li>Multiple rollbacks</li>
+    <li>Reduced performance</li>
+</ul>
+
+<h3>Solution</h3>
+<ul>
+    <li>Use strict schedules</li>
+    <li>Allow reading only committed data</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Cascaded aborts occur due to
+reading uncommitted data and
+can be avoided using strict scheduling.
+</p>
+
+<br>
+<a href="../unit4.html">⬅ Back to Unit IV</a>
+
+</body>
+</html>

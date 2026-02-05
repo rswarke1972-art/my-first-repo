@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Indexed Addressing Mode</title>
+</head>
+<body>
+
+<h2>Indexed Addressing Mode</h2>
+
+<p>
+In Indexed Addressing Mode, the effective address of the operand
+is calculated by adding an index register to a displacement value.
+It is mainly used for accessing elements of arrays.
+</p>
+
+<h3>Format</h3>
+<p>
+Instruction  Register, [Index Register + Displacement]
+</p>
+
+<h3>Example</h3>
+<ul>
+    <li>MOV AX, [SI + 1000H]</li>
+    <li>MOV AL, [DI + 05H]</li>
+</ul>
+
+<p>
+In the above examples, SI or DI acts as the index register,
+and the displacement is added to get the effective address.
+</p>
+
+<h3>Features</h3>
+<ul>
+    <li>Uses index registers (SI or DI)</li>
+    <li>Supports array operations</li>
+    <li>Effective address is calculated during execution</li>
+</ul>
+
+<h3>Advantages</h3>
+<ul>
+    <li>Efficient for accessing array elements</li>
+    <li>Flexible memory access</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Indexed Addressing Mode is useful for handling arrays and data
+structures by calculating memory addresses dynamically.
+</p>
+
+<br>
+<a href="../unit3.html">⬅ Back to Unit III</a>
+
+</body>
+</html>

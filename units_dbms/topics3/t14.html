@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Referential Integrities</title>
+</head>
+<body>
+
+<h2>Referential Integrities</h2>
+
+<p>
+Referential Integrity ensures that relationships
+between tables remain consistent. It maintains
+valid references between primary and foreign keys.
+</p>
+
+<h3>Definition</h3>
+<ul>
+    <li>A foreign key must match a primary key value
+        in the referenced table</li>
+    <li>Or it must be NULL (if allowed)</li>
+</ul>
+
+<h3>Example</h3>
+<p>
+Student (Roll_No, Name, Course_ID)  
+Course (Course_ID, Course_Name)
+</p>
+
+<ul>
+    <li>Course_ID in Student is a foreign key</li>
+    <li>It must exist in Course table</li>
+</ul>
+
+<h3>Actions on Referential Integrity</h3>
+<ul>
+    <li>CASCADE</li>
+    <li>SET NULL</li>
+    <li>RESTRICT</li>
+</ul>
+
+<h3>Importance</h3>
+<ul>
+    <li>Prevents orphan records</li>
+    <li>Maintains data consistency</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Referential Integrity ensures proper
+relationships between related tables.
+</p>
+
+<br>
+<a href="../unit3.html">⬅ Back to Unit III</a>
+
+</body>
+</html>

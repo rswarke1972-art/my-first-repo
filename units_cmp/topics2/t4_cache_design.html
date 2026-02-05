@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Elements of Cache Design</title>
+</head>
+<body>
+
+    <h2>Elements of Cache Design</h2>
+
+    <p>
+        Cache design is important to improve system performance.
+        The main goal of cache is to reduce memory access time by storing
+        frequently used data.
+    </p>
+
+    <h3>Main Elements of Cache Design</h3>
+
+    <h4>1. Cache Size</h4>
+    <p>
+        Cache size determines how much data the cache can store.
+        Larger cache improves hit rate but increases cost.
+    </p>
+
+    <h4>2. Block Size (Line Size)</h4>
+    <p>
+        Cache stores data in blocks or lines.
+        Block size determines how many bytes are stored in one cache block.
+    </p>
+
+    <h4>3. Mapping Technique</h4>
+    <p>
+        Mapping determines how a block from main memory is placed into cache.
+        There are 3 mapping techniques:
+    </p>
+    <ul>
+        <li><b>Direct Mapping</b></li>
+        <li><b>Fully Associative Mapping</b></li>
+        <li><b>Set Associative Mapping</b></li>
+    </ul>
+
+    <h4>4. Replacement Policy</h4>
+    <p>
+        When cache is full, replacement policy decides which block to remove.
+        Common policies are:
+        <b>LRU, FIFO, Random</b>.
+    </p>
+
+    <h4>5. Write Policy</h4>
+    <p>
+        Write policy determines how data is written into cache and main memory.
+        Two common policies are:
+        <b>Write Through</b> and <b>Write Back</b>.
+    </p>
+
+    <h4>6. Cache Levels</h4>
+    <p>
+        Modern systems use multiple cache levels (L1, L2, L3).
+        Each level differs in size and speed.
+    </p>
+
+    <h3>Conclusion</h3>
+    <p>
+        Cache design affects the performance of CPU and memory system.
+        Proper cache size, mapping, and replacement policy improves speed.
+    </p>
+
+    <br>
+    <a href="../../units_cmp/unit2.html">⬅ Back to Unit II</a>
+
+</body>
+</html>

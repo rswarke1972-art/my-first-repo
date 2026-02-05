@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Group By and Having Clause</title>
+</head>
+<body>
+
+<h2>Group By and Having Clause</h2>
+
+<p>
+The GROUP BY clause is used to group rows that have the same
+values in specified columns. The HAVING clause is used to
+filter groups based on conditions.
+</p>
+
+<h3>GROUP BY</h3>
+<ul>
+    <li>Used with aggregate functions</li>
+    <li>Groups rows with same values</li>
+</ul>
+
+<h3>Example</h3>
+<p>
+SELECT Age, COUNT(*)  
+FROM Student  
+GROUP BY Age;
+</p>
+
+<h3>HAVING Clause</h3>
+<ul>
+    <li>Used to filter grouped data</li>
+    <li>Works with GROUP BY</li>
+</ul>
+
+<h3>Example with HAVING</h3>
+<p>
+SELECT Age, COUNT(*)  
+FROM Student  
+GROUP BY Age  
+HAVING COUNT(*) > 1;
+</p>
+
+<h3>Difference Between WHERE and HAVING</h3>
+<ul>
+    <li>WHERE filters rows before grouping</li>
+    <li>HAVING filters groups after grouping</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+GROUP BY and HAVING are used together
+to organize and filter grouped data.
+</p>
+
+<br>
+<a href="../unit2.html">⬅ Back to Unit II</a>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Architecture of 8086</title>
+</head>
+<body>
+
+<h2>Architecture of 8086</h2>
+
+<p>
+The 8086 microprocessor is a 16 bit processor developed by Intel.
+Its architecture is divided into two main units: Bus Interface Unit (BIU)
+and Execution Unit (EU).
+</p>
+
+<h3>Main Components of 8086</h3>
+
+<h4>1. Bus Interface Unit (BIU)</h4>
+<ul>
+    <li>Handles communication with memory and I/O devices</li>
+    <li>Fetches instructions from memory</li>
+    <li>Contains segment registers and instruction queue</li>
+</ul>
+
+<h4>2. Execution Unit (EU)</h4>
+<ul>
+    <li>Executes instructions</li>
+    <li>Performs arithmetic and logic operations</li>
+    <li>Contains ALU, general purpose registers and flag register</li>
+</ul>
+
+<h3>Important Features</h3>
+<ul>
+    <li>16 bit data bus</li>
+    <li>20 bit address bus</li>
+    <li>Can access up to 1 MB memory</li>
+    <li>Uses pipelining (instruction queue of 6 bytes)</li>
+</ul>
+
+<h3>Block Diagram Explanation</h3>
+<p>
+The BIU and EU work in parallel. While the Execution Unit executes
+an instruction, the Bus Interface Unit fetches the next instruction.
+This improves processing speed.
+</p>
+
+<h3>Conclusion</h3>
+<p>
+The 8086 architecture improves performance by dividing tasks between
+BIU and EU. This design increases efficiency and speed of execution.
+</p>
+
+<br>
+<a href="../unit3.html">⬅ Back to Unit III</a>
+
+</body>
+</html>

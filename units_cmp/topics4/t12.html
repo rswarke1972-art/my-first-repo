@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interrupt Service Routine (ISR)</title>
+</head>
+<body>
+
+<h2>Interrupt Service Routine (ISR)</h2>
+
+<p>
+An Interrupt Service Routine (ISR) is a special program that is
+executed when an interrupt occurs. It handles the interrupt
+and performs the required task.
+</p>
+
+<h3>Working of ISR</h3>
+<ul>
+    <li>Interrupt occurs</li>
+    <li>Processor saves current execution state</li>
+    <li>Control transfers to ISR using IVT</li>
+    <li>ISR executes required task</li>
+    <li>Processor returns to main program using IRET</li>
+</ul>
+
+<h3>Important Instruction</h3>
+<ul>
+    <li><b>IRET</b> – Interrupt Return instruction</li>
+</ul>
+
+<h3>Features</h3>
+<ul>
+    <li>Handles hardware or software interrupts</li>
+    <li>Must end with IRET instruction</li>
+    <li>Stored in memory with segment and offset address</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+ISR ensures proper handling of interrupts by temporarily
+pausing the main program and executing a specific routine.
+</p>
+
+<br>
+<a href="../unit4.html">⬅ Back to Unit IV</a>
+
+</body>
+</html>

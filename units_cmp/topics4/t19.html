@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Status Registers of 8259</title>
+</head>
+<body>
+
+<h2>Status Registers of 8259</h2>
+
+<p>
+The 8259 Programmable Interrupt Controller contains status
+registers that provide information about the current interrupt
+status in the system.
+</p>
+
+<h3>Main Status Registers</h3>
+
+<h4>1. Interrupt Request Register (IRR)</h4>
+<ul>
+    <li>Stores all pending interrupt requests</li>
+    <li>Indicates which interrupts are waiting to be serviced</li>
+</ul>
+
+<h4>2. In-Service Register (ISR)</h4>
+<ul>
+    <li>Stores interrupts currently being serviced</li>
+</ul>
+
+<h4>3. Interrupt Mask Register (IMR)</h4>
+<ul>
+    <li>Indicates which interrupts are masked (disabled)</li>
+</ul>
+
+<h3>Working</h3>
+<ul>
+    <li>IRR receives interrupt requests</li>
+    <li>Priority resolver selects highest priority request</li>
+    <li>ISR marks interrupt as being serviced</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Status Registers of 8259 help monitor and manage interrupt
+requests efficiently within the system.
+</p>
+
+<br>
+<a href="../unit4.html">⬅ Back to Unit IV</a>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recoverable and Non-recoverable Schedules</title>
+</head>
+<body>
+
+<h2>Recoverable and Non-recoverable Schedules</h2>
+
+<p>
+Schedules are classified based on whether they
+allow safe recovery from transaction failures.
+</p>
+
+<h3>1. Recoverable Schedule</h3>
+<ul>
+    <li>If T2 reads data written by T1,
+        then T2 commits only after T1 commits</li>
+    <li>Ensures safe recovery</li>
+</ul>
+
+<h4>Example</h4>
+<p>
+T1: Write(A) → Commit  
+T2: Read(A) → Commit
+</p>
+
+<h3>2. Non-recoverable Schedule</h3>
+<ul>
+    <li>T2 commits before T1 commits</li>
+    <li>If T1 aborts, recovery becomes impossible</li>
+</ul>
+
+<h4>Example</h4>
+<p>
+T1: Write(A)  
+T2: Read(A) → Commit  
+T1: Abort
+</p>
+
+<h3>Importance</h3>
+<ul>
+    <li>Recoverable schedules prevent inconsistencies</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Recoverable schedules ensure safe transaction
+execution, while non-recoverable schedules
+may lead to data inconsistency.
+</p>
+
+<br>
+<a href="../unit4.html">⬅ Back to Unit IV</a>
+
+</body>
+</html>

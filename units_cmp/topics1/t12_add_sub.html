@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Addition and Subtraction of Signed Numbers</title>
+</head>
+<body>
+
+    <h2>Addition and Subtraction of Signed Numbers</h2>
+
+    <p>
+        Signed numbers are numbers with a sign (+ or −).
+        In computers, signed numbers are usually represented using
+        <b>Two’s Complement</b> form.
+    </p>
+
+    <h3>Two’s Complement Representation</h3>
+    <p>
+        Two’s complement is a method used to represent negative numbers.
+        It is easy to perform arithmetic operations using this method.
+    </p>
+
+    <h3>Addition of Signed Numbers</h3>
+    <p>
+        While adding two signed numbers:
+    </p>
+    <ul>
+        <li>Convert both numbers to two’s complement form</li>
+        <li>Add them using binary addition</li>
+        <li>If carry is generated, ignore the carry bit</li>
+    </ul>
+
+    <h3>Example</h3>
+    <p>
+        Add +5 and −3 using 4-bit representation:
+    </p>
+    <ul>
+        <li>+5 = 0101</li>
+        <li>−3 = 1101 (two’s complement)</li>
+        <li>Sum = 0101 + 1101 = 0010 = +2</li>
+    </ul>
+
+    <h3>Subtraction of Signed Numbers</h3>
+    <p>
+        Subtraction is performed by adding the negative value.
+        Example: A − B = A + (−B)
+    </p>
+
+    <h3>Overflow in Signed Addition</h3>
+    <p>
+        Overflow occurs when the result is outside the range of representation.
+    </p>
+
+    <br>
+    <a href="../../units_cmp/unit1.html">⬅ Back to Unit I</a>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Read Write Cycle Timing Diagram</title>
+</head>
+<body>
+
+<h2>Read Write Cycle Timing Diagram</h2>
+
+<p>
+The Read and Write cycle timing diagram of 8086 shows the sequence
+of operations during memory or I/O read and write operations.
+Each operation takes place in clock cycles called T-states.
+</p>
+
+<h3>T-States</h3>
+<ul>
+    <li>T1 – Address is placed on address bus</li>
+    <li>T2 – Control signals are activated</li>
+    <li>T3 – Data transfer takes place</li>
+    <li>T4 – Operation completes</li>
+</ul>
+
+<h3>Read Cycle</h3>
+<ul>
+    <li>Address is sent to memory</li>
+    <li>RD signal becomes active (low)</li>
+    <li>Data is read from memory to processor</li>
+</ul>
+
+<h3>Write Cycle</h3>
+<ul>
+    <li>Address is sent to memory</li>
+    <li>WR signal becomes active (low)</li>
+    <li>Data is written from processor to memory</li>
+</ul>
+
+<h3>Important Signals</h3>
+<ul>
+    <li>RD – Read control signal</li>
+    <li>WR – Write control signal</li>
+    <li>M/IO – Memory or I/O selection</li>
+    <li>ALE – Address Latch Enable</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+The timing diagram explains how the 8086 performs read and write
+operations step by step using clock cycles and control signals.
+</p>
+
+<br>
+<a href="../unit4.html">⬅ Back to Unit IV</a>
+
+</body>
+</html>

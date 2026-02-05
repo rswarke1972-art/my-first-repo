@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Second Normal Form (2NF)</title>
+</head>
+<body>
+
+<h2>Second Normal Form (2NF)</h2>
+
+<p>
+A relation is in Second Normal Form (2NF)
+if it is already in First Normal Form (1NF)
+and has no partial dependency.
+</p>
+
+<h3>Partial Dependency</h3>
+<ul>
+    <li>Occurs when a non-prime attribute
+        depends on part of a composite key</li>
+</ul>
+
+<h3>Conditions for 2NF</h3>
+<ul>
+    <li>Relation must be in 1NF</li>
+    <li>No partial dependency</li>
+</ul>
+
+<h3>Example</h3>
+<p>
+Student_Course (Roll_No, Course_ID, Course_Name)
+</p>
+
+<ul>
+    <li>Composite Key: (Roll_No, Course_ID)</li>
+    <li>If Course_Name depends only on Course_ID → Partial dependency</li>
+</ul>
+
+<h3>Solution</h3>
+<ul>
+    <li>Split into separate tables</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+2NF removes partial dependencies
+and improves database structure.
+</p>
+
+<br>
+<a href="../unit3.html">⬅ Back to Unit III</a>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cache Address, Size and Mapping Functions</title>
+</head>
+<body>
+
+    <h2>Cache Address, Size and Mapping Functions</h2>
+
+    <p>
+        Cache memory stores blocks of main memory.
+        To access data in cache, the memory address is divided into parts.
+        Cache mapping defines how main memory blocks are placed in cache.
+    </p>
+
+    <h3>Cache Address Format</h3>
+    <p>
+        A memory address is divided into three fields:
+    </p>
+
+    <ul>
+        <li><b>Tag</b> – Identifies the memory block</li>
+        <li><b>Index</b> – Identifies the cache line</li>
+        <li><b>Offset</b> – Identifies the exact byte inside a block</li>
+    </ul>
+
+    <h3>Cache Size</h3>
+    <p>
+        Cache size is calculated as:
+    </p>
+    <p>
+        <b>Cache Size = Number of Lines × Block Size</b>
+    </p>
+
+    <h3>Mapping Functions</h3>
+
+    <h4>1. Direct Mapping</h4>
+    <p>
+        Each main memory block maps to exactly one cache line.
+        Simple and fast, but may cause more conflicts.
+    </p>
+
+    <h4>2. Fully Associative Mapping</h4>
+    <p>
+        Any block can be placed in any cache line.
+        No conflicts, but requires complex search.
+    </p>
+
+    <h4>3. Set Associative Mapping</h4>
+    <p>
+        Cache is divided into sets.
+        Each block maps to a specific set but can occupy any line within that set.
+        It is a combination of direct and fully associative mapping.
+    </p>
+
+    <h3>Conclusion</h3>
+    <p>
+        Cache mapping affects hit rate and performance.
+        Set associative mapping is commonly used in modern systems.
+    </p>
+
+    <br>
+    <a href="../../units_cmp/unit2.html">⬅ Back to Unit II</a>
+
+</body>
+</html>

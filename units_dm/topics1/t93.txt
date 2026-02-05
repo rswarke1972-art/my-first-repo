@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bounded and Unbounded Sets</title>
+</head>
+<body>
+
+<h2>Bounded and Unbounded Sets</h2>
+
+<p>
+A set is called bounded if all its elements lie
+within some fixed limit. Otherwise, it is unbounded.
+</p>
+
+<h3>Bounded Set</h3>
+<ul>
+    <li>All elements lie between certain values</li>
+    <li>Has upper and lower bounds</li>
+    <li>Example: A = {x | 1 ≤ x ≤ 5}</li>
+</ul>
+
+<h3>Unbounded Set</h3>
+<ul>
+    <li>No fixed upper or lower limit</li>
+    <li>Example: Natural numbers {1, 2, 3, ...}</li>
+</ul>
+
+<h3>Upper and Lower Bound</h3>
+<ul>
+    <li>Upper Bound: Greatest possible value</li>
+    <li>Lower Bound: Smallest possible value</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Bounded sets have limits,
+while unbounded sets extend infinitely.
+</p>
+
+<br>
+<a href="../unit1.html">⬅ Back to Unit I</a>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Two Level Cache</title>
+</head>
+<body>
+
+<h2>Two Level Cache</h2>
+
+<p>
+A two level cache system uses two separate cache memories to improve
+performance. These are called Level 1 (L1) cache and Level 2 (L2) cache.
+</p>
+
+<h3>Need for Two Level Cache</h3>
+<p>
+As processor speed increased, a single cache was not enough to provide
+data at the required speed. To reduce the average memory access time,
+a second cache level was introduced.
+</p>
+
+<h3>Level 1 (L1) Cache</h3>
+<ul>
+    <li>Smallest and fastest cache memory</li>
+    <li>Located inside the CPU</li>
+    <li>Very low access time</li>
+    <li>Stores frequently used instructions and data</li>
+</ul>
+
+<h3>Level 2 (L2) Cache</h3>
+<ul>
+    <li>Larger than L1 cache</li>
+    <li>Slower than L1 but faster than main memory</li>
+    <li>May be inside or outside the CPU</li>
+    <li>Acts as backup cache for L1</li>
+</ul>
+
+<h3>Working of Two Level Cache</h3>
+<p>
+When the CPU needs data:
+</p>
+<ul>
+    <li>First, it checks L1 cache.</li>
+    <li>If data is found (cache hit), it is used immediately.</li>
+    <li>If not found (cache miss), it checks L2 cache.</li>
+    <li>If still not found, data is fetched from main memory.</li>
+</ul>
+
+<h3>Advantages</h3>
+<ul>
+    <li>Improves system performance</li>
+    <li>Reduces average memory access time</li>
+    <li>Better handling of large programs</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Two level cache systems improve efficiency by combining a small fast
+cache (L1) with a larger slower cache (L2), reducing the need to access
+main memory frequently.
+</p>
+
+<br>
+<a href="../unit2.html">⬅ Back to Unit II</a>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interrupt Vector Table (IVT)</title>
+</head>
+<body>
+
+<h2>Interrupt Vector Table (IVT)</h2>
+
+<p>
+The Interrupt Vector Table (IVT) is a table in memory that stores
+the starting addresses of all Interrupt Service Routines (ISR).
+It helps the processor locate the correct ISR when an interrupt occurs.
+</p>
+
+<h3>Location of IVT</h3>
+<ul>
+    <li>Located at memory address 00000H</li>
+    <li>Occupies first 1 KB of memory</li>
+    <li>Contains 256 interrupt vectors</li>
+</ul>
+
+<h3>Structure</h3>
+<ul>
+    <li>Each interrupt vector is 4 bytes</li>
+    <li>First 2 bytes store offset address</li>
+    <li>Next 2 bytes store segment address</li>
+</ul>
+
+<h3>Working</h3>
+<ul>
+    <li>When interrupt occurs, interrupt type number is generated</li>
+    <li>Processor multiplies type number by 4</li>
+    <li>Fetches ISR address from IVT</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+The Interrupt Vector Table enables the 8086 to quickly locate
+and execute the correct Interrupt Service Routine.
+</p>
+
+<br>
+<a href="../unit4.html">⬅ Back to Unit IV</a>
+
+</body>
+</html>

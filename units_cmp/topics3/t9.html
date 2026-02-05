@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Indirect Addressing Mode</title>
+</head>
+<body>
+
+<h2>Indirect Addressing Mode</h2>
+
+<p>
+In Indirect Addressing Mode, the address of the operand is stored
+in a register. The instruction refers to the register, and the
+actual memory address is taken from that register.
+</p>
+
+<h3>Format</h3>
+<p>
+Instruction  Register, [Register]
+</p>
+
+<h3>Example</h3>
+<ul>
+    <li>MOV AX, [BX]</li>
+    <li>MOV AL, [SI]</li>
+</ul>
+
+<p>
+In the above examples, BX and SI contain the memory address
+of the data.
+</p>
+
+<h3>Features</h3>
+<ul>
+    <li>Memory address is stored in a register</li>
+    <li>Flexible addressing method</li>
+    <li>Requires memory access</li>
+</ul>
+
+<h3>Advantages</h3>
+<ul>
+    <li>Allows dynamic memory access</li>
+    <li>Useful for arrays and pointers</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Indirect Addressing Mode provides flexibility by storing the
+memory address inside a register instead of directly in the instruction.
+</p>
+
+<br>
+<a href="../unit3.html">⬅ Back to Unit III</a>
+
+</body>
+</html>

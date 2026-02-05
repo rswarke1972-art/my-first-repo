@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cursor</title>
+</head>
+<body>
+
+<h2>Cursor (PL/SQL)</h2>
+
+<p>
+A Cursor in PL/SQL is used to retrieve and process
+multiple rows returned by a SELECT statement.
+It allows row-by-row processing of query results.
+</p>
+
+<h3>Types of Cursors</h3>
+
+<h4>1. Implicit Cursor</h4>
+<ul>
+    <li>Automatically created by Oracle</li>
+    <li>Used for single-row queries</li>
+</ul>
+
+<h4>2. Explicit Cursor</h4>
+<ul>
+    <li>Declared by programmer</li>
+    <li>Used for multi-row queries</li>
+</ul>
+
+<h3>Steps in Using Explicit Cursor</h3>
+<ul>
+    <li>Declare cursor</li>
+    <li>Open cursor</li>
+    <li>Fetch rows</li>
+    <li>Close cursor</li>
+</ul>
+
+<h3>Example</h3>
+<p>
+DECLARE  
+   CURSOR c1 IS SELECT Name FROM Student;  
+BEGIN  
+   OPEN c1;  
+   FETCH c1 INTO v_name;  
+   CLOSE c1;  
+END;
+</p>
+
+<h3>Conclusion</h3>
+<p>
+Cursors allow efficient row-by-row
+processing of query results in PL/SQL.
+</p>
+
+<br>
+<a href="../unit2.html">⬅ Back to Unit II</a>
+
+</body>
+</html>

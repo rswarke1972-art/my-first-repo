@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Line Size</title>
+</head>
+<body>
+
+    <h2>Line Size</h2>
+
+    <p>
+        Line size (also called block size) is the amount of data stored in one cache line.
+        It is an important factor that affects cache performance.
+    </p>
+
+    <h3>How Line Size Works</h3>
+    <p>
+        Cache stores data in blocks. When a memory block is loaded into cache,
+        the entire block (line) is copied, not just one byte.
+    </p>
+
+    <h3>Effect of Line Size</h3>
+    <ul>
+        <li><b>Small line size</b> → fewer bytes per block</li>
+        <li><b>Large line size</b> → more bytes per block</li>
+    </ul>
+
+    <h3>Advantages of Large Line Size</h3>
+    <ul>
+        <li>Better use of spatial locality</li>
+        <li>Fewer cache misses if nearby data is needed</li>
+    </ul>
+
+    <h3>Disadvantages of Large Line Size</h3>
+    <ul>
+        <li>Wastes space if nearby data is not used</li>
+        <li>Increases memory transfer time</li>
+    </ul>
+
+    <h3>Conclusion</h3>
+    <p>
+        Line size should be chosen carefully to balance between cache hit rate and memory usage.
+    </p>
+
+    <br>
+    <a href="../../units_cmp/unit2.html">⬅ Back to Unit II</a>
+
+</body>
+</html>

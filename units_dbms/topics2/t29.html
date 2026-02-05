@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trigger</title>
+</head>
+<body>
+
+<h2>Trigger</h2>
+
+<p>
+A Trigger is a stored PL/SQL block that automatically
+executes in response to certain events on a table,
+such as INSERT, UPDATE, or DELETE.
+</p>
+
+<h3>Types of Triggers</h3>
+
+<h4>1. BEFORE Trigger</h4>
+<ul>
+    <li>Executes before the event occurs</li>
+</ul>
+
+<h4>2. AFTER Trigger</h4>
+<ul>
+    <li>Executes after the event occurs</li>
+</ul>
+
+<h4>3. INSTEAD OF Trigger</h4>
+<ul>
+    <li>Used mainly with views</li>
+</ul>
+
+<h3>Example</h3>
+<p>
+CREATE OR REPLACE TRIGGER student_trigger  
+BEFORE INSERT ON Student  
+FOR EACH ROW  
+BEGIN  
+   DBMS_OUTPUT.PUT_LINE('New record inserted');  
+END;
+</p>
+
+<h3>Advantages</h3>
+<ul>
+    <li>Automatic execution</li>
+    <li>Maintains data integrity</li>
+    <li>Improves security</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Triggers automatically execute when specific
+database events occur, ensuring control and integrity.
+</p>
+
+<br>
+<a href="../unit2.html">⬅ Back to Unit II</a>
+
+</body>
+</html>

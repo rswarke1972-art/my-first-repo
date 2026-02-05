@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Locality of Reference</title>
+</head>
+<body>
+
+<h2>Locality of Reference</h2>
+
+<p>
+Locality of reference is a principle which states that programs tend to
+access a small portion of memory repeatedly for a short period of time.
+This property helps in improving cache performance.
+</p>
+
+<h3>Types of Locality of Reference</h3>
+
+<h4>1. Temporal Locality</h4>
+<p>
+If a memory location is accessed, it is likely to be accessed again soon.
+</p>
+<ul>
+    <li>Example: Variables inside loops</li>
+    <li>Recently used data is reused</li>
+</ul>
+
+<h4>2. Spatial Locality</h4>
+<p>
+If a memory location is accessed, nearby memory locations are likely to
+be accessed soon.
+</p>
+<ul>
+    <li>Example: Accessing elements of an array sequentially</li>
+    <li>Adjacent memory locations are used</li>
+</ul>
+
+<h4>3. Sequential Locality</h4>
+<p>
+Instructions are generally executed sequentially, one after another.
+</p>
+
+<h3>Importance of Locality</h3>
+<ul>
+    <li>Improves cache efficiency</li>
+    <li>Reduces memory access time</li>
+    <li>Increases overall system performance</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+Locality of reference is the main reason why cache memory works
+effectively. By storing recently and closely used data, cache reduces
+the need to access slower main memory.
+</p>
+
+<br>
+<a href="../unit2.html">⬅ Back to Unit II</a>
+
+</body>
+</html>

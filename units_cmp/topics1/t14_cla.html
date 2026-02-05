@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carry Look Ahead Addition</title>
+</head>
+<body>
+
+    <h2>Carry Look Ahead Addition</h2>
+
+    <p>
+        Carry Look Ahead (CLA) adder is a type of fast adder that improves speed
+        by reducing the time required for carry propagation.
+    </p>
+
+    <h3>Problem with Ripple Carry Adder</h3>
+    <p>
+        In a ripple carry adder, each bit must wait for the previous carry
+        to be calculated. This causes delay and reduces speed.
+    </p>
+
+    <h3>CLA Working Principle</h3>
+    <p>
+        CLA uses <b>generate</b> and <b>propagate</b> signals to calculate carry
+        in advance without waiting for previous carries.
+    </p>
+
+    <h3>Generate and Propagate</h3>
+    <ul>
+        <li><b>Generate (Gi)</b> = Ai AND Bi</li>
+        <li><b>Propagate (Pi)</b> = Ai XOR Bi</li>
+    </ul>
+
+    <h3>Carry Formula</h3>
+    <p>
+        Carry for bit i is calculated as:
+    </p>
+    <p>
+        <b>Ci+1 = Gi + (Pi × Ci)</b>
+    </p>
+
+    <h3>Advantages of CLA</h3>
+    <ul>
+        <li>Faster addition than ripple carry</li>
+        <li>Reduces carry delay</li>
+        <li>Used in high-speed processors</li>
+    </ul>
+
+    <h3>Disadvantages</h3>
+    <ul>
+        <li>More complex circuit design</li>
+        <li>More hardware required</li>
+    </ul>
+
+    <br>
+    <a href="../../units_cmp/unit1.html">⬅ Back to Unit I</a>
+
+</body>
+</html>

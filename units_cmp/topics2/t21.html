@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RAID Level 6</title>
+</head>
+<body>
+
+<h2>RAID Level 6</h2>
+
+<p>
+RAID Level 6 uses block-level data striping with double distributed parity.
+It is similar to RAID 5, but it stores two parity blocks instead of one,
+allowing the system to tolerate two disk failures.
+</p>
+
+<h3>Working of RAID 6</h3>
+<ul>
+    <li>Data is divided into blocks</li>
+    <li>Blocks are distributed across multiple disks</li>
+    <li>Two parity blocks are distributed among all disks</li>
+    <li>Data can be recovered even if two disks fail</li>
+</ul>
+
+<h3>Features</h3>
+<ul>
+    <li>Double parity protection</li>
+    <li>No dedicated parity disk</li>
+    <li>Requires minimum four disks</li>
+</ul>
+
+<h3>Advantages</h3>
+<ul>
+    <li>High fault tolerance</li>
+    <li>Can survive two disk failures</li>
+    <li>Good reliability for large storage systems</li>
+</ul>
+
+<h3>Disadvantages</h3>
+<ul>
+    <li>Slower write performance than RAID 5</li>
+    <li>More complex implementation</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+RAID Level 6 provides higher reliability than RAID 5 by using
+double parity. It is suitable for systems where data protection
+is very important.
+</p>
+
+<br>
+<a href="../unit2.html">⬅ Back to Unit II</a>
+
+</body>
+</html>
